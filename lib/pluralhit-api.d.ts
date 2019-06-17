@@ -13,10 +13,10 @@ export interface EmailMessage {
         textBody?: string[];
         headers?: {
             [key: string]: string;
-        };
+        }[];
         values?: {
             [key: string]: string;
-        };
+        }[];
     };
 }
 export declare class PluralhitApi {
