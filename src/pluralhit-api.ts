@@ -1,4 +1,4 @@
-import amqp from 'amqplib';
+import * as amqp from 'amqplib';
 
 //import { ERROR_BAD_REQUEST, ERROR_INVALID_PARAM_TYPE, ERROR_MALFORMED_JSON_RESULT } from './exceptions-strings';
 
