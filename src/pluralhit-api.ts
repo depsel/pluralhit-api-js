@@ -13,8 +13,8 @@ export interface EmailMessage {
     sender?: MailAddress[];
     replyTo?: MailAddress[];
     textBody?: string[];
-    headers?: { [key: string]: string };
-    values?: { [key: string]: string };
+    headers?: { [key: string]: string }[];
+    values?: { [key: string]: string }[];
   };
 }
 
