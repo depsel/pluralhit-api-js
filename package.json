@@ -1,0 +1,36 @@
+{
+  "name": "pluralhit-clientjs",
+  "version": "0.1.0",
+  "description": "Pluralhit Javascript API Client",
+  "author": "Alejandro Nicodemo",
+  "license": "MIT",
+  "main": "./lib/bundle.js",
+  "module": "./lib/index.js",
+  "jsnext:main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "example1": "ts-node ./src/examples/query-parser.ts",
+    "build": "./node_modules/.bin/tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/depsel/pluralhit-clientjs"
+  },
+  "keywords": [
+    "Pluralhit",
+    "JS",
+    "Client",
+    "API",
+    "Javascript"
+  ],
+  "devDependencies": {
+    "@types/node": "^10.12.10",
+    "@types/amqplib": "^0.5.12",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "amqplib": "^0.5.3"
+  }
+}
