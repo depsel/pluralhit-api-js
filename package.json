@@ -1,6 +1,6 @@
 {
   "name": "pluralhit-clientjs",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Pluralhit Javascript API Client",
   "author": "Alejandro Nicodemo",
   "license": "MIT",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com/depsel/pluralhit-clientjs"
+    "url": "https://github.com/depsel/pluralhit-clientjs"
   },
   "homepage": "https://github.com/depsel/pluralhit-clientjs",
   "keywords": [
