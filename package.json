@@ -1,16 +1,15 @@
 {
   "name": "@depsel/pluralhit-clientjs",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Pluralhit Javascript API Client",
   "author": "Alejandro Nicodemo",
   "license": "MIT",
-  "main": "./lib/bundle.js",
+  "main": "./lib/index.js",
   "module": "./lib/index.js",
   "jsnext:main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "example1": "ts-node ./src/examples/query-parser.ts",
     "build": "./node_modules/.bin/tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "publish": "npm publish --access public"
