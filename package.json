@@ -1,6 +1,6 @@
 {
   "name": "@depsel/pluralhit-clientjs",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Pluralhit Javascript API Client",
   "author": "Alejandro Nicodemo",
   "license": "MIT",
@@ -11,8 +11,7 @@
   "sideEffects": false,
   "scripts": {
     "build": "./node_modules/.bin/tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm publish --access public"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
