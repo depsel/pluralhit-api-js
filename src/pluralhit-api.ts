@@ -5,20 +5,22 @@ import * as amqp from 'amqplib';
 export type MailAddress = string | { name: string; address: string };
 
 export interface EmailMessage {
+  from: MailAddress[];
+  to: MailAddress[];
+  subject: string[];
+  htmlBody: string[];
+  sender?: MailAddress[];
+  replyTo?: MailAddress[];
+  textBody?: string[];
+  headers?: { [key: string]: string }[];
+  values?: { [key: string]: string }[];
+};
+
+export interface PluralhitMessage {
   user: string,
   secret: string,
   service?: string,
-  email: {
-    from: MailAddress[];
-    to: MailAddress[];
-    subject: string[];
-    htmlBody: string[];
-    sender?: MailAddress[];
-    replyTo?: MailAddress[];
-    textBody?: string[];
-    headers?: { [key: string]: string }[];
-    values?: { [key: string]: string }[];
-  };
+  email: EmailMessage
 }
 
 export class PluralhitApi {
@@ -36,7 +38,7 @@ export class PluralhitApi {
 
   }
 
-  async send(em: EmailMessage): Promise<void>{
+  async send(em: PluralhitMessage): Promise<void>{
 
     const conn: amqp.Connection = await amqp.connect(this.hostUrl);
     const channel: amqp.Channel = await conn.createChannel();
