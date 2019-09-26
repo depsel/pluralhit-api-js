@@ -5,7 +5,9 @@ import * as amqp from 'amqplib';
 export type MailAddress = string | { name: string; address: string };
 
 export interface EmailMessage {
-  apikey: string,
+  user: string,
+  secret: string,
+  service?: string,
   email: {
     from: MailAddress[];
     to: MailAddress[];
