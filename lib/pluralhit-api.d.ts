@@ -2,7 +2,7 @@ export declare type MailAddress = string | {
     name: string;
     address: string;
 };
-export interface PluralhitEmailElements {
+export interface PluralhitEmailOptions {
     from: MailAddress[];
     to: MailAddress[];
     subject: string[];
@@ -21,7 +21,7 @@ export interface PluralhitMessage {
     user: string;
     secret: string;
     service?: string;
-    email: PluralhitEmailElements;
+    email: PluralhitEmailOptions;
 }
 export declare class PluralhitApi {
     private readonly CHANNEL_EMAILS;
