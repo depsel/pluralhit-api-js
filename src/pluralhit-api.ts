@@ -4,7 +4,7 @@ import * as amqp from 'amqplib';
 
 export type MailAddress = string | { name: string; address: string };
 
-export interface EmailMessage {
+export interface PluralhitEmailElements {
   from: MailAddress[];
   to: MailAddress[];
   subject: string[];
@@ -20,7 +20,7 @@ export interface PluralhitMessage {
   user: string,
   secret: string,
   service?: string,
-  email: EmailMessage
+  email: PluralhitEmailElements
 }
 
 export class PluralhitApi {
